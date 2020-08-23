@@ -1,5 +1,5 @@
 using System;
-using cqrs.template.Data.Context;
+using cqrs.template.infrastructure.Data.Context;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace cqrs.template.infrastructure.CrossCutting.IoC.Configurations

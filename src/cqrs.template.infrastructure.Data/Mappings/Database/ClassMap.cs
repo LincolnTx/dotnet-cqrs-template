@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace cqrs.template.Data.Mappings.Database
+namespace cqrs.template.infrastructure.Data.Mappings.Database
 {
 	public class ClassMap
 		// : IEntityTypeConfiguration<SomeEntity>

@@ -1,8 +1,8 @@
-using cqrs.template.Data.Context;
+using cqrs.template.infrastructure.Data.Context;
 using cqrs.template.domain.SeedWork;
 using Microsoft.EntityFrameworkCore;
 
-namespace cqrs.template.Data.Repositories
+namespace cqrs.template.infrastructure.Data.Repositories
 {
 	public class Repository<TEntity> : IRepository<TEntity> where TEntity : class, IAggregateRoot
 	{

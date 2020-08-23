@@ -20,7 +20,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cqrs.template.domain", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cqrs.template.infrastructure.CrossCutting.IoC", "src\cqrs.template.infrastructure.CrossCutting.IoC\cqrs.template.infrastructure.CrossCutting.IoC.csproj", "{EC0571D6-5D42-4828-85EA-2BB4B638B875}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cqrs.template.Data", "src\cqrs.template.Data\cqrs.template.Data.csproj", "{E5E4E82D-0B13-4360-A6E5-011BFC97FDA7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cqrs.template.infrastructure.Data", "src\cqrs.template.infrastructure.Data\cqrs.template.infrastructure.Data.csproj", "{E5E4E82D-0B13-4360-A6E5-011BFC97FDA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
