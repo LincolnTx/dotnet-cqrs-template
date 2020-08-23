@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cqrs.template.application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cqrs.template.domain", "src\cqrs.template.domain\cqrs.template.domain.csproj", "{FAF1DA31-C0AE-472F-A92E-66A490C1A1C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cqrs.template.infrastructure.CrossCutting.IoC", "src\cqrs.template.infrastructure.CrossCutting.IoC\cqrs.template.infrastructure.CrossCutting.IoC.csproj", "{EC0571D6-5D42-4828-85EA-2BB4B638B875}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cqrs.template.Data", "src\cqrs.template.Data\cqrs.template.Data.csproj", "{E5E4E82D-0B13-4360-A6E5-011BFC97FDA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +40,14 @@ Global
 		{FAF1DA31-C0AE-472F-A92E-66A490C1A1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAF1DA31-C0AE-472F-A92E-66A490C1A1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAF1DA31-C0AE-472F-A92E-66A490C1A1C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC0571D6-5D42-4828-85EA-2BB4B638B875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0571D6-5D42-4828-85EA-2BB4B638B875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0571D6-5D42-4828-85EA-2BB4B638B875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0571D6-5D42-4828-85EA-2BB4B638B875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5E4E82D-0B13-4360-A6E5-011BFC97FDA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5E4E82D-0B13-4360-A6E5-011BFC97FDA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5E4E82D-0B13-4360-A6E5-011BFC97FDA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5E4E82D-0B13-4360-A6E5-011BFC97FDA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2FA777D6-8B26-4380-9ABF-837C1C2A59E0} = {9DBA9B17-4908-41F9-84F4-F92B8A7B9687}
@@ -43,5 +55,7 @@ Global
 		{BF8E0603-2108-4735-A96B-6B4C19ED5F57} = {B1DCD034-4E6C-4E92-A38D-150B18B65BD3}
 		{2592EADD-38BA-4B3E-A2C5-9C66C1D7E913} = {C06E369B-0127-42A6-A046-96B3A575C1E1}
 		{FAF1DA31-C0AE-472F-A92E-66A490C1A1C6} = {6155732A-706C-4497-9688-9E67BA968C9C}
+		{EC0571D6-5D42-4828-85EA-2BB4B638B875} = {BF8E0603-2108-4735-A96B-6B4C19ED5F57}
+		{E5E4E82D-0B13-4360-A6E5-011BFC97FDA7} = {BF7DB858-D3FD-4350-BC24-E930F7B9B7C3}
 	EndGlobalSection
 EndGlobal
