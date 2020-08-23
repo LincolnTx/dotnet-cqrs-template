@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using cqrs.template.api.v1.Filters;
+using cqrs.template.application.CommandHandlers;
+using cqrs.template.infrastructure.CrossCutting.IoC.Configurations;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -22,13 +26,18 @@ namespace cqrs.template.api.v1
 
 		public IConfiguration Configuration { get; }
 
-		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddSwaggerSetup();
+			services.AddAutoMapper();
+			services.AddDependencyInjectionSetup();
+			services.AddMediatR(typeof(CommandHandler));
+			services.AddScoped<GlobalExceptionFilterAttribute>();
+			services.AddDatabaseSetup();
+			
 			services.AddControllers();
 		}
 
-		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 		{
 			if (env.IsDevelopment())
@@ -41,6 +50,7 @@ namespace cqrs.template.api.v1
 			app.UseRouting();
 
 			app.UseAuthorization();
+			app.UseSwaggerSetup();
 
 			app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 		}

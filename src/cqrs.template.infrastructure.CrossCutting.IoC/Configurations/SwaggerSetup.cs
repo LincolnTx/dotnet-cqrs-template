@@ -17,7 +17,9 @@ namespace cqrs.template.infrastructure.CrossCutting.IoC.Configurations
 					Version = "v1",
 					Title = "Your Api Name",
 					Description = "Some description",
-					Contact = new OpenApiContact { Name = "Lincoln", Email = "lincolnsf98@gmail.com", Url = new Uri("") }
+					Contact = new OpenApiContact { Name = "YourName", Email = "youremail@email.com" }
+					//you can add a contact URI with you want
+					// Contact = new OpenApiContact { Name = "Lincoln", Email = "email@gmail.com", Url = new Uri("https://yoursite.com") }
 				});
 			});
 		}

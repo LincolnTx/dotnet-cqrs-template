@@ -10,4 +10,10 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\cqrs.template.application\cqrs.template.application.csproj" />
+      <ProjectReference Include="..\cqrs.template.domain\cqrs.template.domain.csproj" />
+      <ProjectReference Include="..\cqrs.template.infrastructure.CrossCutting.IoC\cqrs.template.infrastructure.CrossCutting.IoC.csproj" />
+    </ItemGroup>
+
 </Project>

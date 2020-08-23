@@ -13,7 +13,8 @@
     "exclude": ["*.idea"],
     "shortName": "cqrstemplate",
     "sourceName": "cqrs.template",
-    "guids": ["1c9f0454-0566-4070-9737-c6719aeb573c", "42c93dea-20f2-499a-8bae-9d924378554a", "47e17a71-f66f-436e-bfbe-e2894109df88"],
+    "guids": ["1c9f0454-0566-4070-9737-c6719aeb573c", "42c93dea-20f2-499a-8bae-9d924378554a",
+      "47e17a71-f66f-436e-bfbe-e2894109df88", "34e84bd7-7250-452d-bc76-fb263018e145", "c69ecdbb-b502-4655-b200-55a7be5af659"],
     "primaryOutputs": [
       {
         "path": "..\\src\\cqrs.template.api.v1\\cqrs.template.api.v1.csproj"
@@ -23,6 +24,12 @@
       },
       {
         "path": "..\\src\\cqrs.template.domain\\cqrs.template.domain.csproj"
+      },
+      {
+        "path": "..\\src\\cqrs.template.infrastructure.Data\\cqrs.template.infrastructure.Data.csproj"
+      },
+      {
+        "path": "..\\src\\cqrs.template.infrastructure.CrossCutting.IoC\\cqrs.template.infrastructure.CrossCutting.IoC.csproj"
       }
     ],
     "symbols": {
