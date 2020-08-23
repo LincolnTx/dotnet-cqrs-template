@@ -1,0 +1,35 @@
+{
+    "author": "Lincoln Teixeira",
+    "classifications": ["Web api", "CQRS", "ClassLibs"],
+    "description": ".Net Core Web API project using CQRS template",
+    "name": "cqrs template",
+    "defaultName": "Template.Tools.Project",
+    "identity": "cqrs.template.CSharp",
+    "groupIdentity": "Template.Tools",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "shortName": "cqrstemplate",
+    "sourceName": "Template",
+    "guids": [],
+    "primaryOutputs": [
+      {
+        "path": "..\\cqrs.template\\src\\cqrs.template.api.v1\\cqrs.template.api.v1.csproj"
+      },
+      {
+        "path": "..\\cqrs.template\\src\\cqrs.template.application\\cqrs.template.application.csproj"
+      },
+      {
+        "path": "..\\cqrs.template\\src\\cqrs.template.domain\\cqrs.template.domain.csproj"
+      }
+    ],
+    "symbols": {
+      "foo-rename": {
+        "type": "parameter",
+        "datatype": "string",
+        "replaces": "cqrs.template",
+        "description": "Renames component"
+      }
+    }
+  }
