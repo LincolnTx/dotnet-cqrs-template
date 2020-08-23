@@ -3,25 +3,26 @@
     "classifications": ["Web api", "CQRS", "ClassLibs"],
     "description": ".Net Core Web API project using CQRS template",
     "name": "cqrs template",
-    "defaultName": "Template.Tools.Project",
+    "defaultName": "cqrs.template.Project",
     "identity": "cqrs.template.CSharp",
     "groupIdentity": "Template.Tools",
     "tags": {
       "language": "C#",
       "type": "project"
     },
+    "exclude": ["*.idea"],
     "shortName": "cqrstemplate",
-    "sourceName": "Template",
-    "guids": [],
+    "sourceName": "cqrs.template",
+    "guids": ["1c9f0454-0566-4070-9737-c6719aeb573c", "42c93dea-20f2-499a-8bae-9d924378554a", "47e17a71-f66f-436e-bfbe-e2894109df88"],
     "primaryOutputs": [
       {
-        "path": "..\\cqrs.template\\src\\cqrs.template.api.v1\\cqrs.template.api.v1.csproj"
+        "path": "..\\src\\cqrs.template.api.v1\\cqrs.template.api.v1.csproj"
       },
       {
-        "path": "..\\cqrs.template\\src\\cqrs.template.application\\cqrs.template.application.csproj"
+        "path": "..\\src\\cqrs.template.application\\cqrs.template.application.csproj"
       },
       {
-        "path": "..\\cqrs.template\\src\\cqrs.template.domain\\cqrs.template.domain.csproj"
+        "path": "..\\src\\cqrs.template.domain\\cqrs.template.domain.csproj"
       }
     ],
     "symbols": {
