@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="9.0.0" />
+        <PackageReference Include="FluentValidation" Version="8.6.2" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.5" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Folder Include="Validations" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\cqrs.template.domain\cqrs.template.domain.csproj" />
+    </ItemGroup>
+
+</Project>

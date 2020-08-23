@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cqrs.template.api.v1", "src/cqrs.template.api.v1\cqrs.template.api.v1.csproj", "{2FA777D6-8B26-4380-9ABF-837C1C2A59E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{9DBA9B17-4908-41F9-84F4-F92B8A7B9687}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Application", "02 - Application", "{C06E369B-0127-42A6-A046-96B3A575C1E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Domain", "03 - Domain", "{6155732A-706C-4497-9688-9E67BA968C9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infrastructure", "04 - Infrastructure", "{B1DCD034-4E6C-4E92-A38D-150B18B65BD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.1 - Data", "04.1 - Data", "{BF7DB858-D3FD-4350-BC24-E930F7B9B7C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.2 - Crosscutting", "04.2 - Crosscutting", "{BF8E0603-2108-4735-A96B-6B4C19ED5F57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cqrs.template.application", "src\cqrs.template.application\cqrs.template.application.csproj", "{2592EADD-38BA-4B3E-A2C5-9C66C1D7E913}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cqrs.template.domain", "src\cqrs.template.domain\cqrs.template.domain.csproj", "{FAF1DA31-C0AE-472F-A92E-66A490C1A1C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FA777D6-8B26-4380-9ABF-837C1C2A59E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA777D6-8B26-4380-9ABF-837C1C2A59E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA777D6-8B26-4380-9ABF-837C1C2A59E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA777D6-8B26-4380-9ABF-837C1C2A59E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2592EADD-38BA-4B3E-A2C5-9C66C1D7E913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2592EADD-38BA-4B3E-A2C5-9C66C1D7E913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2592EADD-38BA-4B3E-A2C5-9C66C1D7E913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2592EADD-38BA-4B3E-A2C5-9C66C1D7E913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF1DA31-C0AE-472F-A92E-66A490C1A1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF1DA31-C0AE-472F-A92E-66A490C1A1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF1DA31-C0AE-472F-A92E-66A490C1A1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF1DA31-C0AE-472F-A92E-66A490C1A1C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2FA777D6-8B26-4380-9ABF-837C1C2A59E0} = {9DBA9B17-4908-41F9-84F4-F92B8A7B9687}
+		{BF7DB858-D3FD-4350-BC24-E930F7B9B7C3} = {B1DCD034-4E6C-4E92-A38D-150B18B65BD3}
+		{BF8E0603-2108-4735-A96B-6B4C19ED5F57} = {B1DCD034-4E6C-4E92-A38D-150B18B65BD3}
+		{2592EADD-38BA-4B3E-A2C5-9C66C1D7E913} = {C06E369B-0127-42A6-A046-96B3A575C1E1}
+		{FAF1DA31-C0AE-472F-A92E-66A490C1A1C6} = {6155732A-706C-4497-9688-9E67BA968C9C}
+	EndGlobalSection
+EndGlobal
