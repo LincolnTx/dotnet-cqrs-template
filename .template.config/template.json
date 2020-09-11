@@ -39,5 +39,14 @@
         "replaces": "cqrs.template",
         "description": "Renames component"
       }
-    }
+    },
+    "sources": [
+      {
+        "modifiers": [
+          {
+            "exclude": [".git/**", "README.MD"]
+          }
+        ]
+      }
+    ]
   }
