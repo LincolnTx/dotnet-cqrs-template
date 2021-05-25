@@ -11,10 +11,6 @@
     </ItemGroup>
     
     <ItemGroup>
-      <Folder Include="Validations" />
-    </ItemGroup>
-    
-    <ItemGroup>
       <ProjectReference Include="..\cqrs.template.domain\cqrs.template.domain.csproj" />
     </ItemGroup>
 
