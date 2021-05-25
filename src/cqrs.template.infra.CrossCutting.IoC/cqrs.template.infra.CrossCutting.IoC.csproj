@@ -9,11 +9,10 @@
         <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
     </ItemGroup>
-    
+
     <ItemGroup>
-      <ProjectReference Include="..\cqrs.template.application\cqrs.template.application.csproj" />
-      <ProjectReference Include="..\cqrs.template.infrastructure.Data\cqrs.template.infrastructure.Data.csproj" />
+        <ProjectReference Include="..\cqrs.template.application\cqrs.template.application.csproj" />
+        <ProjectReference Include="..\cqrs.template.infra.Data\cqrs.template.infra.Data.csproj" />
     </ItemGroup>
-    
 
 </Project>
