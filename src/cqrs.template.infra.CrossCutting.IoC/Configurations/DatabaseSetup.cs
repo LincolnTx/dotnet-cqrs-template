@@ -1,8 +1,8 @@
 using System;
-using cqrs.template.infrastructure.Data.Context;
+using cqrs.template.infra.Data.Context;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace cqrs.template.infrastructure.CrossCutting.IoC.Configurations
+namespace cqrs.template.infra.CrossCutting.IoC.Configurations
 {
 	public static class DatabaseSetup
 	{

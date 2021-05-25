@@ -13,8 +13,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\cqrs.template.application\cqrs.template.application.csproj" />
+        <ProjectReference Include="..\cqrs.template.application\cqrs.template.application.csproj" />
     </ItemGroup>
 
-    
 </Project>

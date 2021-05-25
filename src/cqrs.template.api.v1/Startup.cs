@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using cqrs.template.api.v1.Filters;
 using cqrs.template.application.CommandHandlers;
-using cqrs.template.infrastructure.CrossCutting.IoC.Configurations;
+using cqrs.template.infra.CrossCutting.IoC.Configurations;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

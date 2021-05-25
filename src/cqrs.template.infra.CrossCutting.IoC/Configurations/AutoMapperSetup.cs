@@ -3,7 +3,7 @@ using AutoMapper;
 using cqrs.template.application.AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace cqrs.template.infrastructure.CrossCutting.IoC.Configurations
+namespace cqrs.template.infra.CrossCutting.IoC.Configurations
 {
 	public static class AutoMapperSetup
 	{

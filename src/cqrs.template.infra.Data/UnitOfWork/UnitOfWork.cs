@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
-using cqrs.template.infrastructure.Data.Context;
+using cqrs.template.infra.Data.Context;
 using cqrs.template.domain.SeedWork;
 
-namespace cqrs.template.infrastructure.Data.UnitOfWork
+namespace cqrs.template.infra.Data.UnitOfWork
 {
 	public class UnitOfWork : IUnitOfWork
 	{

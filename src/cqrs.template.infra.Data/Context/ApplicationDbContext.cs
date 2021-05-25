@@ -5,7 +5,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace cqrs.template.infrastructure.Data.Context
+namespace cqrs.template.infra.Data.Context
 {
 	public class ApplicationDbContext : DbContext
 	{

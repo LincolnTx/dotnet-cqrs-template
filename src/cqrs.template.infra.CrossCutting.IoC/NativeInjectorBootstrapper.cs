@@ -4,7 +4,7 @@ using cqrs.template.domain.Exceptions;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace cqrs.template.infrastructure.CrossCutting.IoC
+namespace cqrs.template.infra.CrossCutting.IoC
 {
 	public class NativeInjectorBootstrapper
 	{

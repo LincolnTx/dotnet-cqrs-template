@@ -13,6 +13,7 @@
     <ItemGroup>
       <ProjectReference Include="..\cqrs.template.application\cqrs.template.application.csproj" />
       <ProjectReference Include="..\cqrs.template.domain\cqrs.template.domain.csproj" />
+      <ProjectReference Include="..\cqrs.template.infra.CrossCutting.IoC\cqrs.template.infra.CrossCutting.IoC.csproj" />
       <ProjectReference Include="..\cqrs.template.infrastructure.CrossCutting.IoC\cqrs.template.infrastructure.CrossCutting.IoC.csproj" />
     </ItemGroup>
 

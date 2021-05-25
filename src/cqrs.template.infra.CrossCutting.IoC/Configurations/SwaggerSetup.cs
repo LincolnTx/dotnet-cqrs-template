@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
-namespace cqrs.template.infrastructure.CrossCutting.IoC.Configurations
+namespace cqrs.template.infra.CrossCutting.IoC.Configurations
 {
 	public static class SwaggerSetup
 	{

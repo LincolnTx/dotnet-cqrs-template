@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
-using cqrs.template.infrastructure.Data.Context;
+using cqrs.template.infra.Data.Context;
 using MediatR;
 using System.Linq;
 using cqrs.template.domain.SeedWork;
 
-namespace cqrs.template.infrastructure.Data
+namespace cqrs.template.infra.Data
 {
 	static class MediatorExtension
 	{

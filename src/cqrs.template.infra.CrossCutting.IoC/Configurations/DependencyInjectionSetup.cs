@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace cqrs.template.infrastructure.CrossCutting.IoC.Configurations
+namespace cqrs.template.infra.CrossCutting.IoC.Configurations
 {
 	public static class DependencyInjectionSetup
 	{
