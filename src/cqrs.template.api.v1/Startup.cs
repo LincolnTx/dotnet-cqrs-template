@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -28,6 +29,8 @@ namespace cqrs.template.api.v1
 
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddApiVersioning();
+			services.AddVersionedApiExplorer();
 			services.AddSwaggerSetup();
 			services.AddAutoMapper();
 			services.AddDependencyInjectionSetup();
@@ -38,19 +41,26 @@ namespace cqrs.template.api.v1
 			services.AddControllers();
 		}
 
-		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IApiVersionDescriptionProvider provider)
 		{
 			if (env.IsDevelopment())
 			{
 				app.UseDeveloperExceptionPage();
 			}
 
-			app.UseHttpsRedirection();
+			app.UseCors(builder =>
+			{
+				builder.WithOrigins("*");
+				builder.AllowAnyOrigin();
+				builder.AllowAnyMethod();
+				builder.AllowAnyHeader();
+			});
+			
 
 			app.UseRouting();
 
 			app.UseAuthorization();
-			app.UseSwaggerSetup();
+			app.UseSwaggerSetup(provider);
 
 			app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 		}

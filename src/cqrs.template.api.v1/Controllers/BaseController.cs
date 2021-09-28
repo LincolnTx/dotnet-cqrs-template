@@ -6,7 +6,7 @@
 
 namespace cqrs.template.api.v1.Controllers
 {
-	[Route("your-project-name/[controller]")]
+	[Route("your-project-name/[controller]/v{version:apiVersion}")]
 	[ServiceFilter(typeof(GlobalExceptionFilterAttribute))]
 	public class BaseController : Controller
 	{
@@ -24,22 +24,21 @@ namespace cqrs.template.api.v1.Controllers
 			return (!_notifications.HasNotifications());
 		}
 
-		protected new IActionResult Response(int statusCode, object result = null)
+		protected new IActionResult Response(IActionResult action)
 		{
 			if (IsValidOperation())
 			{
-				return StatusCode(statusCode, new
-				{
-					success = true,
-					data = result
-				});
+				return action;
 			}
 
-			return BadRequest(new
-			{
-				success = false,
-				errors = _notifications.GetNotifications()
-			});
+			return BadRequest
+			(
+				new
+				{
+					success = false,
+					errors = _notifications.GetNotifications()
+				}
+			);
 		}
 	}
 }
