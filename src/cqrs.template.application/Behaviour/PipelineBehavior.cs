@@ -25,7 +25,7 @@ namespace cqrs.template.application.Behaviour
 
         public async Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate<TResponse> next)
         {
-            if (!ValidateRequest(request))
+            if (!await ValidateRequest(request, cancellationToken))
             {
                 return default;
             }
@@ -50,11 +50,14 @@ namespace cqrs.template.application.Behaviour
             }
         }
 
-        private bool ValidateRequest(TRequest request)
+        private async Task<bool> ValidateRequest(TRequest request, CancellationToken cancellationToken)
         {
-            var failures = _validators
-                .Select(v => v.Validate(request as IValidationContext))
-                .SelectMany(result => result.Errors)
+            var context = new ValidationContext<TRequest>(request);
+
+            var validationsResults = await Task.WhenAll(_validators
+                .Select(v => v.ValidateAsync(context, cancellationToken)));
+
+            var failures = validationsResults.SelectMany(result => result.Errors)
                 .Where(f => f != null)
                 .ToList();
             
@@ -62,7 +65,7 @@ namespace cqrs.template.application.Behaviour
             {
                 foreach(var error in failures)
                 {
-                    _bus.Publish(new ExceptionNotification(error.ErrorCode, error.ErrorMessage, error.PropertyName));
+                    await _bus.Publish(new ExceptionNotification(error.ErrorCode, error.ErrorMessage, error.PropertyName));
                 }
 
                 return false;
