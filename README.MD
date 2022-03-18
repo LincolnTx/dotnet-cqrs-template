@@ -26,4 +26,7 @@ name of your project folders and resources
 
 This template was made by > [Lincoln Texeira](https://github.com/LincolnTx)
 
+_Feel free to use this theme and change its code to better suit your needs, we're here for open source._
+
+Keep coding!
 
